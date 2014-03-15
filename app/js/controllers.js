@@ -25,7 +25,8 @@ angular.module('F1FeederApp.controllers', []).
 
 
 	   		ergastAPIservice.getDriverDetails($scope.id).success(function(response){
-	   			$scope.driver = response.MRData.StandingsTable.StandingsList[0].DriverStandings[0];
+	   			console.log ( response );
+	   			$scope.driver = response.MRData.StandingsTable.StandingsLists[0].DriverStandings[0];
 	   		});
 
 	   		ergastAPIservice.getDriverRaces($scope.id).success(function(response){

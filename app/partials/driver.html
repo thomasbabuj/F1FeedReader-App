@@ -1,4 +1,4 @@
-
+<div ng-controller="driverController">
 <section id="main">
 	<nav id="driver-picture">
 		<div class="avatar">
@@ -9,7 +9,10 @@
 		<div class="driver-status">
 			Country : {{driver.Driver.nationality}} <br />
 			Team : {{driver.Constructors[0].name}} <br />
-			Birth : {{driver.Driver.dataOfBirth}} <br />
+			Birth : {{driver.Driver.dateOfBirth}} <br />
+			Points : {{driver.points}} <br />
+			Positions : {{driver.position}} <br />
+			Wins : {{ driver.wins }} <br />
 			<a href="{{driver.Driver.url}}" target="_blank">Biography</a>
 		</div>
 	</nav>
@@ -40,3 +43,4 @@
 		</table>
 	</div>
 </section>
+</div>
